@@ -11,9 +11,15 @@
   v-else
   @submit.prevent="handleSubmit"
   name="signups"
-  netlify
+data-netlify-recaptcha="true" 
+  data-netlify="true"       
   class="flex items-center border-b border-b-2 border-blue-400 py-2"
 >
+           <p class="hidden">
+    <label>
+      Don’t fill this out if you’re human: <input name="bot-field" />
+    </label>
+  </p>
   <!-- Add hidden input for form-name -->
   <input type="hidden" name="form-name" value="signups" />
 
