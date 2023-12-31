@@ -11,6 +11,7 @@
   v-else
   @submit.prevent="handleSubmit"
   name="signups"
+           netlify 
 data-netlify-recaptcha="true" 
   data-netlify="true"       
   class="flex items-center border-b border-b-2 border-blue-400 py-2"
